@@ -6,7 +6,7 @@ import cohere
 from fpdf import FPDF
 
 # Configure Cohere with your API key
-cohere_api_key = "EVQzIdFzZWHbm9mjuaN6h0ed3Cq4iEOET3iyf1v6"
+cohere_api_key = st.secrets["COHERE_API_KEY"]
 co = cohere.Client(cohere_api_key)
 
 # Function to extract text from uploaded PDF
